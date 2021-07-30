@@ -1,0 +1,41 @@
+$phi: 1.6180339887498948482;
+
+.homepage-hero {
+    background-color: skyblue;
+    background-image: url('../assets/iphone--6-with-dongle-line.svg');
+    display: grid;
+    position: relative;
+    justify-content: end;
+    height: 100%;
+}
+
+.homepage-hero__title {
+    bottom: 0;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 200px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    transform: translate(-20px, 20px) rotate(-7deg);
+
+    @media screen and (max-width: 30em) {
+        bottom: auto;
+        right: auto;
+        top: 0;
+        transform: translate(20px, 100px) rotate(-90deg);
+    }
+}
+
+.homepage-hero__lede {
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 2rem 0 0;
+    padding: 0;
+    transform: translate(0, 3rem);
+    text-transform: lowercase;
+    align-self: end;
+}
