@@ -17,7 +17,7 @@ const options = {
 const data = {
   name: chalk.bold.white('               Nathan Sweany'),
   handle: chalk.white('ethern8'),
-  work: chalk.white('Design Systems Practitioner'),
+  work: chalk.white('Design Systems Engineer'),
   // opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('ethern8'),
   //npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),

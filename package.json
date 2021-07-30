@@ -1,6 +1,10 @@
 {
-  "name": "root",
+  "name": "operonom",
   "private": true,
+  "scripts": {
+    "build": "lerna run --stream build",
+    "bootstrap": "lerna bootstrap"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
