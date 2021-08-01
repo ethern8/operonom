@@ -1,4 +1,4 @@
-$phi: 1.6180339887498948482;
+$phi: 1.6180339887498948482; // golden ratio experiment
 
 .homepage-hero {
     background-color: skyblue;
@@ -19,13 +19,13 @@ $phi: 1.6180339887498948482;
     padding: 0;
     position: absolute;
     right: 0;
-    transform: translate(-20px, 20px) rotate(-7deg);
+    transform: translate(20px, 20px) rotate(-7deg);
 
     @media screen and (max-width: 30em) {
         bottom: auto;
         right: auto;
         top: 0;
-        transform: translate(20px, 100px) rotate(-90deg);
+        transform: translate(20px, 210px) rotate(-90deg);
     }
 }
 

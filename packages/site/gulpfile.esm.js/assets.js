@@ -6,4 +6,9 @@ const modernNormalizeCss = () => {
         .pipe( dest(config.destination.styles) );
 }
 
-export default series(modernNormalizeCss);
+const images = () => {
+    return src(config.source.assets)
+        .pipe( dest(config.destination.assets) );
+}
+
+export default series(modernNormalizeCss, images);
