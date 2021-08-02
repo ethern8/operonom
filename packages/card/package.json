@@ -1,5 +1,5 @@
 {
-  "name": "@ethern8/card",
+  "name": "card",
   "version": "0.0.1",
   "description": "A personal business card for Nathan Sweany (@ethern8)",
   "main": "/bin/card.js",
@@ -33,5 +33,9 @@
     "chalk": "^2.4.1",
     "standard": "^12.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ethern8"
+  },
+  "repository": "https://github.com/ethern8/operonom.git"
 }
