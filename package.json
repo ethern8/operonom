@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build": "lerna run --stream build",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "release": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
