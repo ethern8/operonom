@@ -1,6 +1,6 @@
 {
-  "name": "ethern8-site",
-  "version": "0.0.1",
+  "name": "@ethern8/site",
+  "version": "0.0.0",
   "description": "Portfolio Website for Ethern8",
   "private":true,
   "main": "index.js",
@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ethern8"
+  },
+  "repository": "https://github.com/ethern8/operonom.git"
 }

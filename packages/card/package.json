@@ -1,6 +1,6 @@
 {
-  "name": "card",
-  "version": "0.0.1",
+  "name": "@ethern8/card",
+  "version": "0.0.0",
   "description": "A personal business card for Nathan Sweany (@ethern8)",
   "main": "/bin/card.js",
   "bin": {
