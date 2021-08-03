@@ -1,0 +1,23 @@
+{
+  "name": "@ethern8/tokens",
+  "version": "0.0.1",
+  "description": "Design Tokens for the Ethern8 project",
+  "keywords": [],
+  "author": "Sweany, Nathan <nathan.sweany@gmail.com>",
+  "license": "ISC",
+  "main": "lib/tokens.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethern8/operonom.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ethern8/operonom/issues"
+  },
+  "homepage": "https://github.com/ethern8/operonom#readme",
+  "devDependencies": {
+    "style-dictionary": "^3.0.1"
+  }
+}
