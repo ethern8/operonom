@@ -21,4 +21,5 @@ export const config = {
     }
 }
 
-export default series(clean, build, watch, server);
+export const dev = series(clean, build, watch, server);
+export default series(clean, build);
