@@ -2,15 +2,14 @@
  * RELATIVE ROOT 
  * Regexes file paths to make them relative to the root of the static site
  */
- import { Transform } from 'stream';
- import path from 'path';
- import slash from 'slash';
-//  import { options as server } from '../serve';
-import {config as server} from '../index';
+import { Transform } from 'stream';
+import path from 'path';
+// import slash from 'slash';
+import { config } from '../../gulpfile.esm.js';
  
- function computeRelativePath(from, to) {
-     return slash(path.relative(from, to) || '.') + '/';
- }
+function computeRelativePath(from, to) {
+    return (path.relative(from, to) || '.') + '/';
+}
  
  function fixSourceSet(source, relativeRoot){
      let srcsetRegex = /srcset=["']?\s*((?:.(?!["']?\s+(?:\S+)=|\s*\/?[>"']))+\s)?.*\s?.*["']?\s*/g;
@@ -55,7 +54,7 @@ import {config as server} from '../index';
  export default function relativeRoot(){
      let transform = new Transform({objectMode:true});
      transform._transform = function(file, enc, cb){
-         const relativeRoot = computeRelativePath(file.dirname, `${process.cwd()}/${server.server.baseDir}/`);
+         const relativeRoot = computeRelativePath(file.dirname, `${process.cwd()}/${config.server.baseDir}/`);
          const replacedFilepathsStr = relativize( file.contents.toString(), relativeRoot);
          file.contents = Buffer.from(replacedFilepathsStr, 'utf8');
          this.push(file);

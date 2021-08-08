@@ -1,8 +1,8 @@
 import { series } from 'gulp';
-import build from './build';
-import clean from './clean';
-import { server } from './server';
-import watch from './watch';
+import build from './gulp/build.js';
+import clean from './gulp/clean.js';
+import server from './gulp/server.js';
+import watch from './gulp/watch.js';
 
 export const config = {
     server:{
@@ -22,4 +22,5 @@ export const config = {
 }
 
 export const dev = series(clean, build, watch, server);
+// export const dev = series(clean, build, server);
 export default series(clean, build);

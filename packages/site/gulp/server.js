@@ -1,7 +1,7 @@
 import browserSync from "browser-sync";
-import { config } from ".";
+import { config } from "../gulpfile.esm.js";
 
-export function server(){
+export default function server(cb){
     const bSync = browserSync.create(config.server.name);
     bSync.init({
         open: false,
@@ -9,4 +9,5 @@ export function server(){
             baseDir:config.server.baseDir
         }
     });
+    cb();
 }

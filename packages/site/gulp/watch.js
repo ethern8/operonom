@@ -1,8 +1,8 @@
 import browserSync from "browser-sync";
 import { series, watch } from "gulp";
-import { config } from ".";
-import { markup } from "./markup";
-import { styles } from "./styles";
+import { config } from "../gulpfile.esm.js";
+import { markup } from "./markup.js";
+import { styles } from "./styles.js";
 
 const getBrowserSyncAndReload = (cb) => {
     const bSyncInstance = browserSync.get(config.server.name);
