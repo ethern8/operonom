@@ -1,5 +1,5 @@
 import { dest, series, src } from "gulp"
-import { config } from "."
+import { config } from "../gulpfile.esm.js"
 
 const modernNormalizeCss = () => {
     return src("node_modules/modern-normalize/modern-normalize.css")

@@ -1,10 +1,10 @@
 import { src, dest } from "gulp";
 import data from 'gulp-data';
 import { Transform } from "stream";
-import njkEnv from './utils/nunjucksEnv';
+import njkEnv from './utils/nunjucksEnv.js';
 import nunjucksRender from 'gulp-nunjucks-render';
-import { config } from ".";
-import relativeRoot from "./utils/relativeRoot";
+import { config } from "../gulpfile.esm.js";
+import relativeRoot from "./utils/relativeRoot.js";
 
 function getTemplateData(){
     return {};

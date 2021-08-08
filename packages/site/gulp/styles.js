@@ -2,7 +2,7 @@ import { dest, src } from 'gulp';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-import { config } from '.';
+import { config } from '../gulpfile.esm.js';
 
 const plugins = [
     autoprefixer
