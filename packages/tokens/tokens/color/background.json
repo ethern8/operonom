@@ -1,0 +1,10 @@
+{
+  "color": {
+    "background": {
+      "base"     : { "value": "{color.base.white.value}" },
+      "hero"     : { "value": "{color.base.blue.value}" },
+      "light-gray": { "value": "{color.base.gray.light.value}" },
+      "dark-gray" : { "value": "{color.base.gray.dark.value}" }
+    }
+  }
+}
