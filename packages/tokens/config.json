@@ -4,6 +4,7 @@
     "scss": {
       "transformGroup": "scss",
       "buildPath": "build/scss/",
+      "prefix": "ethern8",
       "files": [{
         "destination": "_variables.scss",
         "format": "scss/variables"

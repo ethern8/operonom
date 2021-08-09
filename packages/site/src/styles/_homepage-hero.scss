@@ -1,7 +1,9 @@
+@import 'node_modules/@ethern8/tokens/build/scss/variables';
+
 $phi: 1.6180339887498948482; // golden ratio experiment
 
 .homepage-hero {
-    background-color: skyblue;
+    background-color: $ethern8-color-background-hero;
     background-image: url('../assets/iphone--6-with-dongle-line.svg');
     display: grid;
     position: relative;

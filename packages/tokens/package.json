@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "style-dictionary build",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/ethern8/operonom/issues"
