@@ -11,6 +11,7 @@
     "url": "git+https://github.com/ethern8/operonom.git"
   },
   "scripts": {
+    "build": "style-dictionary build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

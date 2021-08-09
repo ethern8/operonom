@@ -12,6 +12,7 @@
   "author": "Nathan Sweany",
   "license": "MIT",
   "devDependencies": {
+    "@ethern8/tokens": "^0.0.1",
     "autoprefixer": "^10.2.6",
     "browser-sync": "^2.27.4",
     "del": "^6.0.0",
