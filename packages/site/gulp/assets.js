@@ -7,7 +7,7 @@ const modernNormalizeCss = () => {
 }
 
 const images = () => {
-    return src(config.source.assets)
+    return src(`${config.source.assets}**/*.*`)
         .pipe( dest(config.destination.assets) );
 }
 
