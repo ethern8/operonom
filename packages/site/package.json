@@ -32,8 +32,5 @@
     "modern-normalize": "^1.1.0",
     "@ethern8/tokens": "^0.0.1"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ethern8"
-  },
   "repository": "https://github.com/ethern8/operonom.git"
 }
