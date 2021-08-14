@@ -1,6 +1,6 @@
 {
   "name": "@ethern8/site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Portfolio Website for Ethern8",
   "private": true,
   "main": "index.js",
@@ -29,8 +29,8 @@
     "strip-indent": "^4.0.0"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "@ethern8/tokens": "^0.0.1"
+    "@ethern8/tokens": "^0.0.1",
+    "modern-normalize": "^1.1.0"
   },
   "repository": "https://github.com/ethern8/operonom.git"
 }

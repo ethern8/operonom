@@ -1,6 +1,6 @@
 {
   "name": "@ethern8/tokens",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Design Tokens for the Ethern8 project",
   "keywords": [],
