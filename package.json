@@ -4,7 +4,9 @@
   "scripts": {
     "build": "lerna run --stream build",
     "bootstrap": "lerna bootstrap",
-    "release": "lerna publish"
+    "version": "lerna version",
+    "release:npm": "lerna publish from-git --yes",
+    "release:github": "lerna publish from-package --yes --registry https://npm.pkg.github.com/@ethern8"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
