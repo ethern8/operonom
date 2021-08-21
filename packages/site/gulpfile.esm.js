@@ -9,6 +9,11 @@ export const config = {
         name:"ethern8",
         baseDir:"dest/"
     },
+    rollup: {
+		input: 'src/scripts/index.js',
+		output: 'dest/scripts/bundle.js',
+		bundleFormat: 'iife',
+	},
     source:{
         assets:"src/assets/",
         styles:"src/styles/**/*.scss",
@@ -17,6 +22,7 @@ export const config = {
     destination:{
         assets:"dest/assets/",
         markup:"dest",
+        scripts: "dest/scripts/",
         styles:"dest/styles/",
     }
 }
