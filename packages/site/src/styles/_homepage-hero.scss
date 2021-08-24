@@ -3,12 +3,12 @@
 $phi: 1.6180339887498948482; // golden ratio experiment
 
 .homepage-hero {
-    background-color: $ethern8-color-background-light-gray;
+    background-color: $ethern8-color-background-hero;
     background-image: url('../assets/Asset_4.svg');
     display: grid;
     position: relative;
     justify-content: end;
-    height: 100%;
+    height: 80vh;
 }
 
 .homepage-hero__title-container {
@@ -32,7 +32,7 @@ $phi: 1.6180339887498948482; // golden ratio experiment
     right: 0;
     transform: translate(20px, 20px) rotate(-7deg);
 
-    @media screen and (max-width: 30em) {
+    @media screen and (max-width: 32em) {
         bottom: auto;
         right: auto;
         top: 0;
@@ -49,4 +49,7 @@ $phi: 1.6180339887498948482; // golden ratio experiment
     transform: translate(0, 3rem);
     text-transform: lowercase;
     align-self: end;
+}
+.homepage-hero__lede-emphasis {
+    color: $ethern8-color-base-gray-medium;
 }

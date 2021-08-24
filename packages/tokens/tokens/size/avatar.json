@@ -1,0 +1,18 @@
+{
+    "size": {
+      "avatar": {
+        "small" : {
+          "value": "7.5",
+          "comment": "the small size of the avatar"
+        },
+        "medium": {
+          "value": "15",
+          "comment": "the medium size of the avatar"
+        },
+        "large" : {
+          "value": "30",
+          "comment": "the large size of the avatar"
+        }
+      }
+    }
+  }

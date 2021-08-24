@@ -1,3 +1,3 @@
-import { CodeSnippet } from "node_modules/@ethern8/code-snippet/index.js";
+import { CodeSnippet } from '@ethern8/code-snippet';
                              
 window.customElements.define('code-snippet', CodeSnippet);

@@ -1,0 +1,36 @@
+.homepage-cv {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+}
+.homepage-cv__heading-level-3 {
+    font-size: $ethern8-size-font-large;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    
+    &:first-of-type,
+    .homepage-cv__eyebrow + & {
+        margin-top: 0;
+    }
+}
+.homepage-cv__eyebrow {
+    color: $ethern8-color-base-gray-medium;
+    font-size: $ethern8-size-font-small;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 4rem;
+    padding: 0;
+    text-transform: uppercase;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+.homepage-cv__list {
+    font-size: $ethern8-size-font-medium;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+    padding-left: 1rem;
+}

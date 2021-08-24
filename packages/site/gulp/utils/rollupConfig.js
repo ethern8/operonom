@@ -12,21 +12,23 @@ const rollupConfig = {
 	},
 	plugins: [
 		resolve(),
-		commonjs(),
-		babel({
-			// exclude: 'node_modules/**',
-			babelHelpers: 'runtime',
-			presets: [
-				[
-					'@babel/preset-env',
-					{
-						debug: false,
-						useBuiltIns: 'usage',
-						corejs: { version: 3, proposals: true },
-					},
-				],
-			],
+		commonjs({
+			include:['node_modules/@ethern8/**']
 		}),
+		// babel({
+		// 	// exclude: 'node_modules/**',
+		// 	babelHelpers: 'runtime',
+		// 	presets: [
+		// 		[
+		// 			'@babel/preset-env',
+		// 			{
+		// 				debug: false,
+		// 				useBuiltIns: 'usage',
+		// 				corejs: { version: 3, proposals: true },
+		// 			},
+		// 		],
+		// 	],
+		// }),
 	],
 };
 

@@ -27,7 +27,7 @@ export class CodeSnippet extends LitElement {
   constructor() {
     super();
     this.language = 'clike';
-    this.theme = '/node_modules/prismjs/themes/prism.css';
+    this.theme = 'https://unpkg.com/prismjs/themes/prism.css';
     this.lineNumbers = false;
   }
 
@@ -55,7 +55,7 @@ export class CodeSnippet extends LitElement {
 
   async __loadLanguage() {
     await import(
-      `/node_modules/prismjs/components/prism-${this.language}.min.js`
+      `https://unpkg.com/prismjs/components/prism-${this.language}.min.js`
     );
   }
 

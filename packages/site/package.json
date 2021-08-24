@@ -15,8 +15,6 @@
     "@babel/core": "^7.15.0",
     "@babel/eslint-plugin": "^7.14.5",
     "@babel/preset-env": "^7.15.0",
-    "@ethern8/code-snippet": "^0.0.0",
-    "@ethern8/tokens": "^0.0.1",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
@@ -37,8 +35,10 @@
     "strip-indent": "^4.0.0"
   },
   "dependencies": {
+    "@ethern8/code-snippet": "^0.0.0",
     "@ethern8/tokens": "^0.0.1",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "prismjs": "^1.24.1"
   },
   "repository": "https://github.com/ethern8/operonom.git"
 }
