@@ -1,14 +1,22 @@
 .homepage-about {
+    background-color: $ethern8-color-background-dark-gray;
+    color: $ethern8-color-font-on-dark;
+    height: 100vh;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    display:grid;
+    align-items: center;
+}
+
+.homepage-about__container {
     display:grid;
     column-gap: 2rem;
     row-gap: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
-    margin-top: 30vh;
     margin-right: auto;
     margin-left: auto;
     max-width: 80ch;
-    padding: 0 2rem;
     @media screen and (min-width: 32em){
         grid-template-columns: min-content 1fr;
     }
@@ -27,11 +35,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: thin solid $ethern8-color-base-gray-light;
     border-radius: 50%;
     height: $ethern8-size-avatar-medium;
     object-fit: cover;
     object-position: center right;
     width: $ethern8-size-avatar-medium;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -49,13 +59,18 @@
         }
     }
     
+    &:first-letter {
+        display: block;
+        padding-right: 0.5rem;
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+    }
     @supports(initial-letter){
         &:first-letter {
-            // display: block;
+            display: inline;
             initial-letter: 2;
-            // padding-right: 0.5rem;
-            // font-size: 2rem;
-            font-family: 'Pacifico', cursive;
+            padding-right: 0;
+            font-size: inherit;
         }
     }
 }

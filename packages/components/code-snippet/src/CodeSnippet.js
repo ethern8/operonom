@@ -7,6 +7,9 @@ export class CodeSnippet extends LitElement {
       :host {
         font-size: 16px;
       }
+      pre {
+        border-radius: 8px;
+      }
       #hidden-code {
         display: none !important;
       }

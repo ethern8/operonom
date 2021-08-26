@@ -4,11 +4,13 @@ $phi: 1.6180339887498948482; // golden ratio experiment
 
 .homepage-hero {
     background-color: $ethern8-color-background-hero;
-    background-image: url('../assets/Asset_4.svg');
+    background-image: url('../assets/Asset_6.svg');
+    background-repeat: round round;
     display: grid;
     position: relative;
     justify-content: end;
     height: 80vh;
+    margin-bottom: 20vh;
 }
 
 .homepage-hero__title-container {
