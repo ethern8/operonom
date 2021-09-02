@@ -1,10 +1,9 @@
 .homepage-cv {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 80ch;
+    margin: 8rem auto;
 }
 .homepage-cv__heading-level-3 {
-    font-size: $ethern8-size-font-large;
+    font-size: $ethern8-size-font-heading-level-4;
     font-weight: bold;
     margin: 0;
     margin-top: 2rem;
@@ -15,9 +14,15 @@
         margin-top: 0;
     }
 }
+.homepage-cv__heading-level-5 {
+    font-size: $ethern8-size-font-heading-level-5;
+    color: $ethern8-color-font-gray-on-light;
+    margin: 0;
+    padding: 0;
+}
 .homepage-cv__eyebrow {
-    color: $ethern8-color-base-gray-medium;
-    font-size: $ethern8-size-font-small;
+    color: $ethern8-color-font-blue-on-light;
+    font-size: $ethern8-size-font-heading-level-6;
     font-weight: bold;
     margin: 0;
     margin-top: 4rem;

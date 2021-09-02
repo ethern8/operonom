@@ -1,21 +1,24 @@
 .homepage-about {
     background-color: $ethern8-color-background-dark-gray;
+    background-image: url('../assets/mountain_range_03.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-clip: border-box;
     color: $ethern8-color-font-on-dark;
-    height: 100vh;
-    margin-top: 3rem;
-    padding: 0 2rem;
+    margin-top: calc(3rem + 155px);
+    padding: 155px 2rem 77px;
+    position: relative;
     display:grid;
     align-items: center;
 }
-
+    
 .homepage-about__container {
     display:grid;
     column-gap: 2rem;
     row-gap: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     max-width: 80ch;
     @media screen and (min-width: 32em){
         grid-template-columns: min-content 1fr;
@@ -23,8 +26,6 @@
 }
 
 .homepage-about__image-container {
-    display: grid;
-    justify-items: center;
     order: 2;
     @media screen and (min-width: 32em){
         order: 1;

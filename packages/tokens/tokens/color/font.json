@@ -3,7 +3,22 @@
     "font": {
       "base"     : { "value": "{color.base.black.value}" },
       "on-light": { "value": "{color.base.black.value}" },
-      "on-dark" : { "value": "{color.base.white.value}" }
+      "on-dark" : { "value": "{color.base.white.value}" },
+      "gray": {
+        "base":{ "value":"{color.base.gray.medium.value}"},
+        "on-light":{"value":"{color.base.gray.medium.value}"},
+        "on-dark":{"value":"{color.base.gray.light.value}"}
+      },
+      "blue":{
+        "base": {"value":"{color.base.blue.dark.value}"},
+        "on-light": {"value":"{color.base.blue.dark.value}"},
+        "on-dark": {"value":"{color.base.blue.light.value}"}
+      },
+      "red":{
+        "base":{"value":"{color.base.red.value}"},
+        "on-light":{"value":"{color.base.red.value}"},
+        "on-dark":{"value":"{color.base.white.value}"}
+      }
     }
   }
 }

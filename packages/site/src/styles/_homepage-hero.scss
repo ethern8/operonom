@@ -6,6 +6,7 @@ $phi: 1.6180339887498948482; // golden ratio experiment
     background-color: $ethern8-color-background-hero;
     background-image: url('../assets/Asset_6.svg');
     background-repeat: round round;
+    color: $ethern8-color-background-light;
     display: grid;
     position: relative;
     justify-content: end;
@@ -43,7 +44,7 @@ $phi: 1.6180339887498948482; // golden ratio experiment
 }
 
 .homepage-hero__lede {
-    color: darkblue;
+    color: $ethern8-color-font-blue-on-light;
     font-size: 1.5rem;
     font-weight: 300;
     margin: 0 2rem 0 0;
@@ -53,5 +54,5 @@ $phi: 1.6180339887498948482; // golden ratio experiment
     align-self: end;
 }
 .homepage-hero__lede-emphasis {
-    color: $ethern8-color-base-gray-medium;
+    color: $ethern8-color-font-gray-on-light;
 }

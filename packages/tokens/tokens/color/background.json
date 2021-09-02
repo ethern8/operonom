@@ -2,9 +2,12 @@
   "color": {
     "background": {
       "base"     : { "value": "{color.base.white.value}" },
-      "hero"     : { "value": "{color.base.blue.value}" },
+      "hero"     : { "value": "{color.base.blue.medium.value}" },
+      "white"    : {"value":"{color.base.white.value}"},
+      "light"    : {"value":"{color.base.light.value}"},
       "light-gray": { "value": "{color.base.gray.light.value}" },
-      "dark-gray" : { "value": "{color.base.gray.dark.value}" }
+      "dark-gray" : { "value": "{color.base.gray.dark.value}" },
+      "red": {"value":"{color.base.red.value}"}
     }
   }
 }
