@@ -2,7 +2,7 @@ name: Build and Deploy
 on: 
   push:
     branches:
-      - deploy-test
+      - deploy-stage
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,5 +19,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: deploy-test # The branch the action should deploy to.
+          branch: deploy-pages # The branch the action should deploy to.
           folder: packages/site/dest # The folder the action should deploy.
