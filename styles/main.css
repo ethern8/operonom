@@ -1,0 +1,205 @@
+html {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.homepage-layout__main {
+  display: grid;
+  height: 100vh;
+}
+
+.homepage-hero {
+  background-color: #adcee1;
+  background-image: url("../assets/Asset_6.svg");
+  background-repeat: round round;
+  color: #fefff1;
+  display: grid;
+  position: relative;
+  justify-content: end;
+  height: 80vh;
+  margin-bottom: 20vh;
+}
+
+.homepage-hero__title-container {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.homepage-hero__title {
+  bottom: 0;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 200px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  transform: translate(20px, 20px) rotate(-7deg);
+}
+@media screen and (max-width: 32em) {
+  .homepage-hero__title {
+    bottom: auto;
+    right: auto;
+    top: 0;
+    transform: translate(20px, 210px) rotate(-90deg);
+  }
+}
+
+.homepage-hero__lede {
+  color: #25405b;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 2rem 0 0;
+  padding: 0;
+  transform: translate(0, 3rem);
+  text-transform: lowercase;
+  align-self: end;
+}
+
+.homepage-hero__lede-emphasis {
+  color: #707070;
+}
+
+.homepage-about {
+  background-color: #444444;
+  background-image: url("../assets/mountain_range_03.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-clip: border-box;
+  color: #ffffff;
+  margin-top: calc(3rem + 155px);
+  padding: 155px 2rem 77px;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.homepage-about__container {
+  display: grid;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  margin: 0 auto;
+  max-width: 80ch;
+}
+@media screen and (min-width: 32em) {
+  .homepage-about__container {
+    grid-template-columns: -webkit-min-content 1fr;
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.homepage-about__image-container {
+  order: 2;
+}
+@media screen and (min-width: 32em) {
+  .homepage-about__image-container {
+    order: 1;
+  }
+}
+
+.homepage-about__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: thin solid #cccccc;
+  border-radius: 50%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+  width: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-about__content {
+  display: block;
+  order: 1;
+}
+@media screen and (min-width: 32em) {
+  .homepage-about__content {
+    order: 2;
+  }
+}
+.homepage-about__content p {
+  margin-top: 1rem;
+}
+.homepage-about__content p:first-of-type {
+  margin-top: 0;
+}
+.homepage-about__content:first-letter {
+  display: block;
+  padding-right: 0.5rem;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+@supports (initial-letter) {
+  .homepage-about__content:first-letter {
+    display: inline;
+    initial-letter: 2;
+    padding-right: 0;
+    font-size: inherit;
+  }
+}
+
+.homepage-cv {
+  max-width: 80ch;
+  margin: 8rem auto;
+}
+
+.homepage-cv__heading-level-3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+.homepage-cv__heading-level-3:first-of-type, .homepage-cv__eyebrow + .homepage-cv__heading-level-3 {
+  margin-top: 0;
+}
+
+.homepage-cv__heading-level-5 {
+  font-size: 1rem;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-cv__eyebrow {
+  color: #25405b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+.homepage-cv__eyebrow:first-of-type {
+  margin-top: 0;
+}
+
+.homepage-cv__list {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.homepage-footer {
+  background-color: #ff0000;
+  border-top: 50px solid #FAA393;
+  min-height: 30vh;
+}
