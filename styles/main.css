@@ -14,7 +14,8 @@ html {
 .homepage-hero {
   background-color: #adcee1;
   background-image: url("../assets/Asset_6.svg");
-  background-repeat: round round;
+  background-repeat: round;
+  background-position: center;
   color: #fefff1;
   display: grid;
   position: relative;
@@ -76,10 +77,22 @@ html {
   background-clip: border-box;
   color: #ffffff;
   margin-top: calc(3rem + 155px);
-  padding: 155px 2rem 77px;
+  padding: 155px 0 0;
   position: relative;
   display: grid;
   align-items: center;
+}
+.homepage-about:after {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  background-image: url("../assets/bottom2.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-clip: border-box;
+  background-size: cover;
+  height: 112px;
 }
 
 .homepage-about__container {
@@ -91,6 +104,7 @@ html {
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   margin: 0 auto;
+  padding: 0 2rem;
   max-width: 80ch;
 }
 @media screen and (min-width: 32em) {
@@ -199,7 +213,67 @@ html {
 }
 
 .homepage-footer {
-  background-color: #ff0000;
-  border-top: 50px solid #FAA393;
-  min-height: 30vh;
+  background-color: #25405b;
+  color: #ffffff;
+  display: flex;
+  border-top: 30px solid #adcee1;
+  position: relative;
+}
+
+.homepage-footer__logo-container {
+  flex: 1 1 auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.homepage-footer__logo {
+  bottom: 0;
+  color: #adcee1;
+  font-family: "Pacifico", cursive;
+  font-size: 200px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  transform: translate(20px, 20px) rotate(-7deg);
+  opacity: 0.2;
+}
+
+.homepage-footer__list {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  list-style-type: none;
+  margin: 2rem 1.5rem;
+  padding: 0;
+  align-self: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.homepage-footer__list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-footer__link:link {
+  color: #adcee1;
+  text-decoration: underline;
+}
+.homepage-footer__link:visited {
+  color: #ffffff;
+}
+.homepage-footer__link:hover {
+  text-decoration: none;
+}
+.homepage-footer__link:focus {
+  box-shadow: none;
+  outline: 1px dotted #ffffff;
+  outline-offset: 3px;
 }
