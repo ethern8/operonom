@@ -1,6 +1,74 @@
 .homepage-footer {
-    background-color: $ethern8-color-background-red;
-    border-top: 50px solid #FAA393;
+    background-color: $ethern8-color-background-blue;
+    color: $ethern8-color-font-on-dark;
+    display: flex;
+    border-top: 30px solid $ethern8-color-background-hero;
+    position: relative;
     // background: url('../assets/White_friendly_mtns.svg') no-repeat bottom center;
-    min-height: 30vh;
+    // min-height: 40vh;
+}
+
+.homepage-footer__logo-container {
+    flex: 1 1 auto;
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.homepage-footer__logo {
+    bottom: 0;
+    color: $ethern8-color-background-hero;
+    font-family: 'Pacifico', cursive;
+    font-size: 200px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    transform: translate(20px, 20px) rotate(-7deg);
+    opacity: 0.2;
+    
+}
+
+.homepage-footer__list {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    list-style-type: none;
+    margin: 2rem 1.5rem;
+    padding:0;
+    align-self: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.homepage-footer__list-item {
+    margin:0;
+    padding:0;
+}
+
+.homepage-footer__link {
+
+    &:link {
+        color: $ethern8-color-background-hero;
+        text-decoration: underline;
+    }
+    &:visited {
+        color: $ethern8-color-font-on-dark;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {}
+
+    &:focus {
+        box-shadow: none;
+        outline: 1px dotted $ethern8-color-font-on-dark;
+        outline-offset: 3px;
+    }
 }

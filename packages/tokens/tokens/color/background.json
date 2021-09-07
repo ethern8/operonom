@@ -7,7 +7,8 @@
       "light"    : {"value":"{color.base.light.value}"},
       "light-gray": { "value": "{color.base.gray.light.value}" },
       "dark-gray" : { "value": "{color.base.gray.dark.value}" },
-      "red": {"value":"{color.base.red.value}"}
+      "red": {"value":"{color.base.red.value}"},
+      "blue": {"value":"{color.base.blue.dark.value}"}
     }
   }
 }

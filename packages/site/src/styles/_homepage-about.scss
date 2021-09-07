@@ -6,10 +6,22 @@
     background-clip: border-box;
     color: $ethern8-color-font-on-dark;
     margin-top: calc(3rem + 155px);
-    padding: 155px 2rem 77px;
+    padding: 155px 0 0;
     position: relative;
     display:grid;
     align-items: center;
+    &:after {
+        content:'';
+        display: block;
+        position: relative;
+        background-color: $ethern8-color-background-white;
+        background-image: url('../assets/bottom2.svg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-clip: border-box;
+        background-size: cover;
+        height: 112px;
+    }
 }
     
 .homepage-about__container {
@@ -19,6 +31,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     margin: 0 auto;
+    padding: 0 2rem;
     max-width: 80ch;
     @media screen and (min-width: 32em){
         grid-template-columns: min-content 1fr;
