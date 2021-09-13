@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ethern8/operonom.git"
   },
   "scripts": {
-    "build": "style-dictionary build",
+    "build": "node ./build.js",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "prepublishOnly": "npm run build"
   },
