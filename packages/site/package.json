@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@ethern8/code-snippet": "^0.0.0",
+    "@ethern8/ethern8-icon": "^0.0.0",
     "@ethern8/tokens": "^0.0.1",
     "modern-normalize": "^1.1.0",
     "prismjs": "^1.24.1"

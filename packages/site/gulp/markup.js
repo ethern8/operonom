@@ -1,4 +1,5 @@
 import { src, dest } from "gulp";
+import fs from 'fs';
 import data from 'gulp-data';
 import { Transform } from "stream";
 import njkEnv from './utils/nunjucksEnv.js';
@@ -7,7 +8,9 @@ import { config } from "../gulpfile.esm.js";
 import relativeRoot from "./utils/relativeRoot.js";
 
 function getTemplateData(){
-    return {};
+    const file = fs.readFileSync('node_modules/@ethern8/tokens/build/json/icons.json');
+    const data = JSON.parse(file);
+    return data;
 }
 
 function injectPageData(){

@@ -1,11 +1,15 @@
 @use 'node_modules/@ethern8/tokens/build/scss/variables';
+@use 'node_modules/@ethern8/tokens/build/scss/icons';
 
+/*  */
 html {
     background-color: variables.$ethern8-color-background-white;
     margin: 0; padding: 0;
     font-size: 16px;
     line-height: 1.5;
 }
+
+@import 'node_modules/@ethern8/ethern8-icon/src/Ethern8Icon';
 
 @import 'homepage-layout';
 @import 'homepage-hero';
