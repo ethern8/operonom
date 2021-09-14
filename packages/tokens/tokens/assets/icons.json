@@ -11,6 +11,7 @@
       "briefcase": { "value": "assets/icons/briefcase.svg" },
       "calendar": { "value": "assets/icons/calendar.svg" },
       "camera": { "value": "assets/icons/camera.svg" },
+      "caret-down": { "value": "assets/icons/caret-down.svg" },
       "check-circle": { "value": "assets/icons/check-circle.svg" },
       "check-square": { "value": "assets/icons/check-square.svg" },
       "database": { "value": "assets/icons/database.svg" },
