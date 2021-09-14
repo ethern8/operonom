@@ -1,3 +1,4 @@
+/*  */
 html {
   background-color: #ffffff;
   margin: 0;
@@ -6,31 +7,40 @@ html {
   line-height: 1.5;
 }
 
+.ethern8-icon-root {
+  display: inline-block;
+  position: relative;
+  fill: none;
+  stroke: currentColor;
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
 .homepage-layout__main {
   display: grid;
   height: 100vh;
 }
 
 .homepage-hero {
+  display: grid;
+  position: relative;
+  height: 100vh;
+}
+
+.homepage-hero__title-container {
   background-color: #adcee1;
   background-image: url("../assets/Asset_6.svg");
   background-repeat: round;
   background-position: center;
   color: #fefff1;
-  display: grid;
-  position: relative;
-  justify-content: end;
-  height: 80vh;
-  margin-bottom: 20vh;
-}
-
-.homepage-hero__title-container {
   top: 0;
-  bottom: 0;
+  bottom: 20vh;
   right: 0;
   left: 0;
   overflow: hidden;
   position: absolute;
+  z-index: 1;
 }
 
 .homepage-hero__title {
@@ -47,10 +57,7 @@ html {
 }
 @media screen and (max-width: 32em) {
   .homepage-hero__title {
-    bottom: auto;
-    right: auto;
-    top: 0;
-    transform: translate(20px, 210px) rotate(-90deg);
+    font-size: 120px;
   }
 }
 
@@ -58,15 +65,22 @@ html {
   color: #25405b;
   font-size: 1.5rem;
   font-weight: 300;
-  margin: 0 2rem 0 0;
-  padding: 0;
-  transform: translate(0, 3rem);
+  justify-self: end;
+  margin: 80vh 0 0;
+  padding: 1rem;
   text-transform: lowercase;
-  align-self: end;
+  z-index: 2;
 }
 
 .homepage-hero__lede-emphasis {
   color: #707070;
+}
+
+.homepage-hero__guide {
+  justify-self: center;
+  align-self: end;
+  color: #25405b;
+  z-index: 3;
 }
 
 .homepage-about {
@@ -171,6 +185,7 @@ html {
 .homepage-cv {
   max-width: 80ch;
   margin: 8rem auto;
+  padding: 0 1rem;
 }
 
 .homepage-cv__heading-level-3 {
@@ -221,14 +236,9 @@ html {
 }
 
 .homepage-footer__logo-container {
-  flex: 1 1 auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  flex: 2 1 auto;
+  position: relative;
   overflow: hidden;
-  position: absolute;
-  z-index: 1;
 }
 
 .homepage-footer__logo {
@@ -240,7 +250,7 @@ html {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 0;
+  left: 0;
   transform: translate(20px, 20px) rotate(-7deg);
   opacity: 0.2;
 }
@@ -261,7 +271,17 @@ html {
   margin: 0;
   padding: 0;
 }
+.homepage-footer__list-item + .homepage-footer__list-item {
+  margin-top: 0.75rem;
+}
 
+.homepage-footer__link {
+  display: flex;
+  align-items: center;
+}
+.homepage-footer__link ethern8-icon {
+  margin-right: 0.5rem;
+}
 .homepage-footer__link:link {
   color: #adcee1;
   text-decoration: underline;
