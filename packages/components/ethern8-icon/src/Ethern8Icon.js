@@ -1,29 +1,8 @@
-import { html, css, LitElement } from 'lit';
+import { html, LitElement } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit/directives/class-map.js';
 
 export class Ethern8Icon extends LitElement {
-  static get styles() {
-    return css`
-      :host {
-        display: inline-block;
-        line-height: 0;
-      }
-
-      svg {
-        display: inline-block;
-        position: relative;
-        fill: none;
-        stroke: currentColor;
-
-        width: 24px;
-        height: 24px;
-
-        color: black;
-      }
-    `;
-  }
-
   static get properties() {
     return {
       name: { type: String },
@@ -51,7 +30,7 @@ export class Ethern8Icon extends LitElement {
    */
   generatedA11yLabelledbyId() {
     if (!this._generatedA11yLabelledbyId) {
-      this._generatedA11yLabelledbyId = `ethern8-icon-title-${this.generateRandomNumber()}`;
+      this._generatedA11yLabelledbyId = `ethern8-icon-title-${Ethern8Icon.generateRandomNumber()}`;
     }
 
     return this._generatedA11yLabelledbyId;
@@ -61,19 +40,14 @@ export class Ethern8Icon extends LitElement {
     return `#asset-icon-${this.name}`;
   }
 
-  static get classes() {
-    return {
-      'ethern8-icon-root': true,
-    };
-  }
-
   render() {
+    const classes = { 'ethern8-icon-root': true };
     return html`<svg
       aria-hidden=${this.a11yLabel ? 'false' : 'true'}
       aria-labelledby=${ifDefined(
         this.a11yLabel ? this.generatedA11yLabelledbyId() : undefined
       )}
-      class=${classMap(this.classes)}
+      class=${classMap(classes)}
       focusable=${this.a11yLabel ? 'true' : 'false'}
       role=${ifDefined(this.a11yLabel ? 'img' : undefined)}
     >
