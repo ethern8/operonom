@@ -25,6 +25,26 @@ npx @ethern8/card</code-snippet>
             </div>
         </div>
     </section>
+    <section class="homepage-story">
+        <p>This site is a static site built on Design System architecture.  This includes a flexible Design Token system powered by Style Dictionary, web componentry hand-crafted with Open WC tooling, and nimble templating provided by Nunjucks.  Sewn together with a few custom NodeJS file transforms sitting on top of GulpJS.  Together, they make for a get-out-of-my-way build pipeline with a full level of developer control.  Let’s take a look under the hood.</p>
+        <p>A good system starts with a solid set of Design Tokens.  I’ve really enjoyed the flexibility that Style Dictionary provides and leverage them here to set the foundations of the visual styles including Color, Size, and Space.</p>
+        <p>Color tokens should provide palettes of options, but ideally go one step further to communicate where color should be applied.</p>
+        <code-snippet language="scss">// good
+$ethern8-color-background-base: #ffffff;
+// better
+$ethern8-color-background-hero: #adcee1;
+
+// good starting point
+$ethern8-color-font-base: #000000;
+
+// much more clear definition
+$ethern8-color-font-on-light: #000000;
+$ethern8-color-font-on-dark: #ffffff;
+</code-snippet>
+
+        <p>Style Dictionary’s out-of-the-box transforms give you a fantastic starting point for slinging those Design Token name-value pairs.  However, real power in Style Dictionary is it’s extensibility.  I needed to transform a set of icons into strings and export each svg as a string in JS.  SD’s `registerFormat` to the rescue.</p>
+        <code-snippet language="javascript"></code-snippet>
+    </section>
     <section class="homepage-cv">
         <p class="homepage-cv__eyebrow">Experience</p>
         <h2 class="homepage-cv__heading-level-3">Design Systems Tech Lead</h2>

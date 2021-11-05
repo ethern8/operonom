@@ -1,7 +1,12 @@
 {
     "space":{
-        "utility":{},
-        "squish":{},
-        "stretch":{}
+        "utility":{
+            "half-x": {"value":"0.5"},
+            "three-quarter-x": {"value":"0.75"},
+            "one-x": {"value":"1"},
+            "one-and-half-x": {"value":"1.5"},
+            "two-x": {"value":"2"},
+            "three-x": {"value":"3"}
+        }
     }
 }

@@ -1,13 +1,13 @@
 .homepage-cv {
     max-width: 80ch;
     margin: 8rem auto;
-    padding: 0 1rem;
+    padding: 0 $ethern8-space-utility-one-x;
 }
 .homepage-cv__heading-level-3 {
     font-size: $ethern8-size-font-heading-level-4;
     font-weight: bold;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: $ethern8-space-utility-two-x;
     padding: 0;
     
     &:first-of-type,
@@ -36,7 +36,7 @@
 .homepage-cv__list {
     font-size: $ethern8-size-font-medium;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: $ethern8-space-utility-half-x;
     padding: 0;
-    padding-left: 1rem;
+    padding-left: $ethern8-space-utility-one-x;
 }

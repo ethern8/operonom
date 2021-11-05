@@ -43,11 +43,11 @@ $phi: 1.6180339887498948482; // golden ratio experiment
 
 .homepage-hero__lede {
     color: $ethern8-color-font-blue-on-light;
-    font-size: 1.5rem;
+    font-size: $ethern8-size-font-large; // used to be 1.5rem
     font-weight: 300;
     justify-self: end;
     margin: 80vh 0 0;
-    padding: 1rem;
+    padding: $ethern8-space-utility-one-x;
     text-transform: lowercase;
     z-index: 2;
 }
@@ -61,4 +61,18 @@ $phi: 1.6180339887498948482; // golden ratio experiment
     align-self: end;
     color: $ethern8-color-font-blue-on-light;
     z-index: 3;
+    animation: pointDown 2s easeOut 0 infinite forward none;
+}
+
+@keyframes pointDown {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(64px);
+    }
+
 }

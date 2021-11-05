@@ -1,3 +1,5 @@
+$ethern8-homepage-about-top-padding: 155px;
+
 .homepage-about {
     background-color: $ethern8-color-background-dark-gray;
     background-image: url('../assets/mountain_range_03.svg');
@@ -5,8 +7,8 @@
     background-position: center top;
     background-clip: border-box;
     color: $ethern8-color-font-on-dark;
-    margin-top: calc(3rem + 155px);
-    padding: 155px 0 0;
+    margin-top: calc(#{$ethern8-space-utility-three-x} + #{$ethern8-homepage-about-top-padding});
+    padding: $ethern8-homepage-about-top-padding 0 0;
     position: relative;
     display:grid;
     align-items: center;
@@ -26,12 +28,12 @@
     
 .homepage-about__container {
     display:grid;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    column-gap: $ethern8-space-utility-two-x;
+    row-gap: $ethern8-space-utility-two-x;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 $ethern8-space-utility-two-x;
     max-width: 80ch;
     @media screen and (min-width: 32em){
         grid-template-columns: min-content 1fr;
@@ -55,7 +57,7 @@
     object-fit: cover;
     object-position: center right;
     width: $ethern8-size-avatar-medium;
-    margin-bottom: 1.5rem;
+    margin-bottom: $ethern8-space-utility-one-and-half-x;
     
 }
 
@@ -67,7 +69,7 @@
     }
 
     p {
-        margin-top: 1rem;
+        margin-top: $ethern8-space-utility-one-x;
         &:first-of-type {
             margin-top: 0;
         }
@@ -75,8 +77,8 @@
     
     &:first-letter {
         display: block;
-        padding-right: 0.5rem;
-        font-size: 2rem;
+        padding-right: $ethern8-space-utility-half-x;
+        font-size: $ethern8-space-utility-two-x;
         font-family: 'Pacifico', cursive;
     }
     @supports(initial-letter){
